@@ -1,0 +1,38 @@
+body {
+    margin: 170px 134px;
+    background: #FCF5EB;
+    font-family: "Poppins";
+}
+
+h1 {
+    font-family: "Playfair Display";
+    font-size: 2.75rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Playfair Display";
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    gap: 3.625em;
+    border-top: 1px solid black;
+    max-width: 950px;
+}
+
+p {
+    font-size: 0.875em;
+    line-height: 142.5%;
+}
+
+h1::before {
+    content: "N";
+    font-size: 300px;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    color: rgba(0, 0, 0, 0.05)
+}

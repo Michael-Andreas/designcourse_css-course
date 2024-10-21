@@ -1,0 +1,25 @@
+body {
+    font-family: "Playfair Display";
+    margin: 200px 122px 0 122px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2.1125em;
+}
+
+span {
+    color: #07801E;
+}
+
+section {
+    display: flex;
+    gap: 1.2em;
+}
+
+img {
+    width: 25%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 200px;
+}

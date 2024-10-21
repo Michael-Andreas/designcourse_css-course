@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #CBE1F1;
+    font-family: "Nunito";
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 324px;
+    background-color: white;
+    padding: 11px 27px 11px 11px;
+    border-radius: 37px;
+    width: 100%;
+}
+
+img {
+    height: 52px;
+    width: 52px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 1.075em;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.25;
+}
+
+.indicator {
+    background-color: #5DBC3C;
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 100%;
+    margin-left: auto;
+}
