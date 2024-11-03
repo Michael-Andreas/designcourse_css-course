@@ -8,21 +8,23 @@ html {
 
 body {
     margin: 0;
-    min-height: 100vh;
+    min-height: 100dvh;
     background-color: #D7DED3;
     font-family: 'Poppins';
+    display: grid;
+    place-items: center;
 }
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 section {
     background: white;
     padding: 3em;
     border-radius: .8em;
     display: flex;
     flex-direction: column;
-    gap: 13.5em;
+    gap: 6.6rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .left-col {
@@ -34,7 +36,7 @@ section {
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: normal;
     margin: 0;
 }
@@ -62,7 +64,7 @@ a.cta p {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-    gap: 2.8em;
+    gap: 13px;
 }
 
 
@@ -71,8 +73,8 @@ a.cta p {
 }
 
 .box {
-    width: calc(50% - 2em);
-    aspect-ratio: 1/1;
+    width: calc(50% - 7px);
+    aspect-ratio: 176/141;
     gap: 1em;
     border-radius: .6em;
 }
@@ -91,28 +93,48 @@ a.cta p {
     background-color: #D0E1BB;
 }
 
+.box:nth-of-type(4) {
+    display: none;
+}
+
+.box:nth-of-type(5) {
+    background-color: #BBC8E1;
+    display: none;
+}
+
 .box:nth-of-type(6) {
     background-image: url('../assets/drum3.jpg');
     background-size: cover;
 }
-.box:nth-of-type(5) {
-    background-color: #BBC8E1;
-}
 
 @media screen and (min-width: 800px) {
-    .wrapper {
-        margin: 10em auto;
+
+    section {
+        padding: 6rem;
     }
 
-    .hide-mobile {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .box {
+        width: calc(33% - 2em);
+        aspect-ratio: 182/146;
+        flex-grow: 1;
+    }
+
+    .box:nth-of-type(4),
+    .box:nth-of-type(5) {
         display: block;
     }
-    .box {
-        width: calc(33.33% - 2em);
+
+    .right-col {
+        gap: 20px;
     }
 }
 
 @media screen and (min-width: 1200px) {
+
     section {
         flex-direction: row;
     }
