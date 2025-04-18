@@ -1,47 +1,46 @@
-html {
-    font-size: 62.5%;
-}
-* { 
+* {
     box-sizing: border-box;
 }
+
 body {
     background: #CBE1F1;
     font-family: "Nunito";
+    font-weight: 700;
+    font-size: 1.25rem;
     margin: 3em;
 }
 
-img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 .avatar {
-    background-color: white;
-    border-radius: 20em;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    background-color: white;
     align-items: center;
-    padding: 2em;
+    width: 300px;
+    padding: 0.688rem 1.688rem 0.688rem 0.688rem;
+    justify-content: space-between;
+    border-radius: 37px;
 }
 
 .left-col {
     display: flex;
     align-items: center;
-}
-
-p {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0 0 0 1em;
+    gap: 1.125rem;
 }
 
 .status {
-    width: 2em;
-    height: 2em;
-    background: #5DBC3C;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    margin-right: 3em;
+    background-color: #5DBC3C;
+
+}
+
+img {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+}
+
+p {
+    margin: 0;
 }
