@@ -10,7 +10,7 @@ body {
 h1 {
     font-size: 3.2rem;
     font-weight: normal;
-    margin-bottom: 6.8rem;
+    margin-bottom: 2.8rem;
 }
 
 span {
@@ -22,7 +22,6 @@ span {
     flex-direction: column;
     gap: 2em;
     width: 100%;
-    height: 400px;
 }
 
 .wrapper {
@@ -36,16 +35,21 @@ img {
     border-radius: 1em;
 }
 
-@media screen and (min-width: 600px) {
-
+@media (min-width: 600px) {
     .container {
         flex-direction: row;
+        gap: 2em;
         flex-wrap: wrap;
     }
 
-    .container img {
-        flex-grow: 1;
+    img {
+        flex: 1;
+        ;
     }
-
 }
 
+@media (min-width: 900px) {
+    h1 {
+        margin-bottom: 6.8rem;
+    }
+}
