@@ -22,9 +22,9 @@ h1.mainhead::before {
     position: absolute;
     content: 'N';
     top: -13rem;
-    left: -8rem;
+    left: -2rem;
     font-size: 30rem;
-    color: rgba(0,0,0,0.05);
+    color: rgba(0, 0, 0, 0.05);
     pointer-events: none;
     z-index: -1;
 }
@@ -49,22 +49,23 @@ p {
     font-size: 1.4rem;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
     section {
         flex-direction: row;
+        gap: 3rem;
         flex-wrap: wrap;
-        gap: 3em;
     }
+
     article {
         flex: 1;
     }
+
     .first {
         flex-basis: 100%;
     }
 }
 
-@media screen and (min-width: 900px) {
-
+@media (min-width: 900px) {
     .first {
         flex-basis: 0;
     }
