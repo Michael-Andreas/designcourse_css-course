@@ -20,30 +20,15 @@ header {
 
 nav {
     position: fixed;
-    right: -100%;
     top: 0;
-    width: 33%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
     background: white;
-    height: 100vh;
-    z-index: 2;
-    transition: right .5s ease-in-out;
-    padding: 4.6em;
-}
-
-.menu-btn {
-    width: 3rem;
-    height: 3rem;
-    cursor: pointer;
-}
-
-.open {
-    right: 0%;
-}
-.close {
-    cursor: pointer;
-    display: block;
-    margin-left: auto;
-    margin-bottom: 6.6em;
+    width: 60%;
+    height: 100dvh;
+    padding: 35px 42px 0 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar {
@@ -57,6 +42,7 @@ a.logo {
     font-size: 2.2rem;
     font-weight: bold;
 }
+
 a {
     text-decoration: none;
 }
@@ -64,11 +50,10 @@ a {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 3.5em;
+    gap: 4.3em;
 }
 
 ul li a {
@@ -103,24 +88,48 @@ a.cart:hover {
     background-color: #B5C0CE;
 }
 
+.menu-btn {
+    width: 23px;
+}
+
+.close-btn {
+    width: 24px;
+    margin-bottom: 46px;
+    margin-left: auto;
+}
+
+.open {
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
 .mobile-cart-menu {
     display: flex;
+    gap: 25px;
     align-items: center;
-    gap: 2em;
 }
 
 @media screen and (min-width: 600px) {
-    .menu-btn, .close {
+
+    .close-btn,
+    .menu-btn {
         display: none;
     }
+
     nav {
-        position: unset;
-        height: auto;
-        background: none;
-        padding: 0;
+        position: static;
+        background: transparent;
         width: auto;
+        height: auto;
+        padding: 0;
+        transition: none;
+        padding: 0;
     }
+
     ul {
         flex-direction: row;
+        align-items: center;
+        gap: 5em;
+        padding: 0;
     }
 }
