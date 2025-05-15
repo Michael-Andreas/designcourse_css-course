@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 1rem;
+  filter: drop-shadow(4px 4px 0px black);
+  border: 3px solid black;
+  aspect-ratio: 1.35 / 1;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  padding: 4.688rem 3.375rem;
+  text-align: center;
+  background: linear-gradient(to right, #FFEBCD, #FF8B72);
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+header p {
+  margin-bottom: 3.188rem;
+  text-align: center;
+  max-width: 70%;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 3.125rem;
+  }
+
+  header {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 75px 82px 40px 82px
+  }
+
+  header p {
+    margin-inline: 0;
+    text-align: left;
+    max-width: 33ch;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .image-row {
+    display: flex;
+    gap: 34px;
+  }
+
+  .two-images {
+    display: contents;
+  }
+
+  .image-row>.two-images>img,
+  .image-row>img {
+    flex: 1;
+    min-width: 0px;
+    /* VERY IMPORTANT TO ENSURE THE SHRINKING OF IMAGES */
+  }
+
+  .frog {
+    transform: translateY(50%);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 75px 82px 40px 82px
+  }
+
+  header p {
+    margin-inline: 0;
+    text-align: left;
+    max-width: 33ch;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .image-row {
+    display: flex;
+    gap: 34px;
+  }
+
+  .two-images {
+    display: contents;
+  }
+
+  .image-row>.two-images>img,
+  .image-row>img {
+    flex: 1;
+    min-width: 0px;
+    /* VERY IMPORTANT TO ENSURE THE SHRINKING OF IMAGES */
+  }
+
+  .frog {
+    transform: translateY(50%);
+  }
+}
